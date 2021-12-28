@@ -5,15 +5,20 @@ import { Router } from '@angular/router';
 import { AppComponent } from './app.component';
 import { PaisesModule } from './paises/paises.module';
 import { AppRoutingModule } from './app-routing.module';
+import { SharedModule } from './shared/shared.module';
+import { SidebarComponent } from './shared/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     PaisesModule,
+    SharedModule
+
 
 
   ],
