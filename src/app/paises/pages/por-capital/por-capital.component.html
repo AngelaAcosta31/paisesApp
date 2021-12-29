@@ -1,15 +1,19 @@
-<h2>Por Capitales</h2>
-<hr>
-<div class="row">
-  <div class="col">
-    <app-pais-input
-      (onEnter)="buscar($event)"
-      placeholder="Buscar Capital..."
-    >
-    </app-pais-input>
+
+<div class="animate__animated animate__fadeIn animated__faster">
+  <h2>Por Capitales</h2>
+  <hr>
+  <div class="row">
+    <div class="col">
+      <app-pais-input
+        (onEnter)="buscar($event)"
+        placeholder="Buscar Capital..."
+      >
+      </app-pais-input>
+    </div>
   </div>
+  <hr>
+
 </div>
-<hr>
 <!--Mensaje de error-->
 <div *ngIf="hayError" class="alert alert-danger">
   No se encontro ningun país con el nombre "{{termino}}"

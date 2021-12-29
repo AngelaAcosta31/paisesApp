@@ -21,6 +21,12 @@ export class PaisInputComponent implements OnInit{
   termino:string = '';
 
   ngOnInit(){
+    /**
+     * debouncer para emitir el valor o el
+     * resultado de la busqueda despues de un
+     *  tiempo determinado despues de que la
+     * persona dejo de escribir
+     */
     this.debouncer
      .pipe(debounceTime(300))
      .subscribe(valor => {

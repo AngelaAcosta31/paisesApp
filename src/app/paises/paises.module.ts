@@ -7,6 +7,7 @@ import { VerPaisComponent } from './pages/ver-pais/ver-pais.component';
 import { PorCapitalComponent } from './pages/por-capital/por-capital.component';
 import { RouterModule } from '@angular/router';
 import { ComponentsModule } from './components/components.module';
+import { PaisTablaComponent } from './components/pais-tabla/pais-tabla.component';
 
 
 
